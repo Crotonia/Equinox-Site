@@ -245,6 +245,9 @@ img {
   }
 }
 
+
+/* @media only and (max-width:) */
+
 @media all and (max-width: 768px) {
   h2 {
     font-size: 1.5rem;
@@ -254,8 +257,9 @@ img {
   }
 
   .login-box {
-    min-width: 30vh;
+    min-width: 40vh;
     width: 40vh;
+    min-height: 350px;
     height: auto;
   }
   .icon{

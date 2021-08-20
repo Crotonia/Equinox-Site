@@ -13,3 +13,21 @@ function toggleAccordion() {
 }
 
 items.forEach(item => item.addEventListener('click', toggleAccordion));
+
+
+
+// themes
+const body = document.body;
+
+const toggle = document.getElementById("toggle");
+toggle.onclick = () => {
+  if (body.classList.contains("light")) {
+    body.classList.remove("light");
+    body.classList.add("dark");
+    // localStorage.setItem("theme", "dark");
+  } else {
+    body.classList.remove("dark");
+    body.classList.add("light");
+    // localStorage.setItem("theme", "light");
+  }
+};
