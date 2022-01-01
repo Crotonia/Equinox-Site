@@ -198,4 +198,20 @@ li span {
     font-size: 55px;
     /* font-family: 'Mate SC', Arial, sans-serif; */
   }
+  #crotonia-logo {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #countdown {
+    transform: scale(0.7);
+    white-space: nowrap;
+    width: max-content;
+  }
 }
