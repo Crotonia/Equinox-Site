@@ -36,26 +36,23 @@
     }, 0);
 })();
 
-// theme toggle
-
 const body = document.body;
 
-
-
-
-const toggle = document.getElementById("toggle");
-toggle.onclick = () => {
-  if (body.classList.contains("light")) {
-    body.classList.remove("light");
-    body.classList.add("dark");
-    // localStorage.setItem("theme", "dark");
+// lock screen orientation
+// screen.orientation.lock("portrait");
+const screen = window.screen;
+console.log(screen.orientation.angle);
+if (screen.orientation.angle === 90) {
+  body.style.display = "none";
+  this.alert("Please use the Potrait mode");
+} else {
+  body.style.display = "";
+}
+window.addEventListener("orientationchange", function () {
+  if (screen.orientation.angle === 90) {
+    body.style.display = "none";
+    this.alert("Please use the Potrait mode");
   } else {
-    body.classList.remove("dark");
-    body.classList.add("light");
-    // localStorage.setItem("theme", "light");
+    body.style.display = "";
   }
-};
-
-// if (theme) {
-//   console.log(theme);
-// }
+});
