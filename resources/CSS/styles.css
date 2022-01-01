@@ -19,12 +19,12 @@
   --bg: var(--gray0);
   --bg-nav: var(--black);
   --nav-text: var(--offwhite);
-  --text: var(--gray6);
+  --text: var(--offwhite);
   --bg-solar: var(--yellow);
-  --timer-headline: gold;
+  --timer-headline: wheat;
   --cursor-color: var(--blue);
-  --img-filter: invert(1);
-  --texture1: #e6e6e6;
+  --img-filter: invert(0);
+  --texture1: #191919;
   --texture2: #f5f5f5;
 }
 
@@ -40,16 +40,6 @@
   --texture1: var(--opwhite);
   --texture2: var(--black);
 }
-
-/* .solar {
-    --gray0: #fbffd4;
-    --gray1: #f7f8d0;
-    --gray2: #b6f880;
-    --gray3: #5ec72d;
-    --gray4: #3ea565;
-    --gray5: #005368;
-    --gray6: #003d4c;
-} */
 
 /* general styling */
 * {
@@ -71,15 +61,17 @@ body {
 }
 
 .nav-item {
-  margin-right: 2vh;
-  /* font-weight:bolder; */
+  margin-right: 2rem;
   font-size: 1.5em !important;
   width: 125px;
   height: 50px;
   color: var(--nav-text);
   transition: color 250ms ease-in-out;
-  /* text-align: center; */
 }
+.nav-item:nth-child(4) {
+  margin-right: 0.5rem;
+}
+
 .nav-item:hover {
   color: var(--bg-solar);
 }
@@ -97,7 +89,6 @@ body {
 
 .navbar {
   min-height: 5vh;
-  
   background: var(--bg-nav);
   color: var(--text);
 }
@@ -114,7 +105,8 @@ body {
   filter: var(--img-filter);
 }
 
-body {padding-top: 70px;
+body {
+  padding-top: 70px;
   margin-top: 5vh;
   align-items: center;
   background-color: var(--bg) !important;
@@ -122,14 +114,17 @@ body {padding-top: 70px;
   padding-top: 5vh;
   color: var(--text);
 
-  background: radial-gradient(var(--texture2) 15%, transparent 16%) 0 0,
+  /* background: radial-gradient(var(--texture2) 15%, transparent 16%) 0 0,
     radial-gradient(var(--texture2) 15%, transparent 16%) 8px 8px,
     radial-gradient(var(--texture1) 15%, transparent 20%) 0 1px,
-    radial-gradient(var(--texture1) 15%, transparent 20%) 8px 9px;
+    radial-gradient(var(--texture1) 15%, transparent 20%) 8px 9px; */
 
   background-size: 16px 16px;
-  transition: background 500ms ease-in-out, color 1000ms ease-in-out;
-  /* background: url(/resources/images/4.png); */
+  /* transition: background 500ms ease-in-out, color 1000ms ease-in-out; */
+  background: url(/resources/images/general-assembly.jpeg) no-repeat center
+    fixed;
+  backdrop-filter: blur(5px) brightness(0.7);
+  background-size: cover;
   /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; */
 }
@@ -141,8 +136,9 @@ body {padding-top: 70px;
   /* background-color: black; */
   display: block;
   color: var(--text);
-  left:0; right:0;
-  width:100%;
+  left: 0;
+  right: 0;
+  width: 100%;
   text-align: center;
   border-radius: 30px;
   /* margin-bottom: 100vh; */
@@ -203,5 +199,3 @@ li span {
     /* font-family: 'Mate SC', Arial, sans-serif; */
   }
 }
-
-

@@ -6,7 +6,13 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <title>CROTONIA COUNTDOWN</title>
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="resources/svgs/munlogo.svg"
+      type="image/x-icon"
+    />
+    <title>EquinoxWorldMUN</title>
     <link rel="stylesheet" href="/resources/CSS/styles.css" />
     <!-- <link rel="stylesheet" href="/resources/CSS/themes.css" /> -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -26,28 +32,30 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    
   </head>
-  <body class="dark">
+  <body class="light">
     <div class="navigator">
       <nav class="navbar navbar-expand-md fixed-top">
         <a href="#" class="navbar-brand">
           <img
-            src="/resources/svgs/circle-cropped.svg"
+            src="/resources/svgs/munlogo.svg"
             height="75"
             class="svg"
             alt="CROTONIA"
           />
         </a>
 
-        <a
+        <!-- <a
           href="#"
           class="nav-item nav-link"
           style="color: var(--bg-solar)"
           id="toggle"
-          
-          ><img src="/resources/svgs/sunny-outline.svg" class="svg" height="35px" alt="Toggle"
-        /></a>
+          ><img
+            src="/resources/svgs/sunny-outline.svg"
+            class="svg"
+            height="35px"
+            alt="Toggle"
+        /></a> -->
 
         <button
           type="button"
@@ -64,52 +72,51 @@
               href="#"
               class="nav-item nav-link active"
               style="font-size: larger"
-              >Home</a
+              >Information</a
             >
             <a href="#" class="nav-item nav-link" style="font-size: larger"
-              >Rules</a
+              >Committees</a
+            >
+            <a href="#" class="nav-item nav-link" style="font-size: larger"
+              >Secretariat</a
             >
             <a
-              href="./pages/abtpage.html"
-              class="nav-item nav-link"
-              style="font-size: larger"
-              >About Us</a
-            >
-            <a
-              href="./pages/faq.html"
+              href="#"
               class="nav-item nav-link"
               tabindex="-1"
               style="font-size: larger"
-              >FAQs</a
+              >Sponsors</a
+            ><a
+              href="#"
+              class="nav-item nav-link"
+              tabindex="-1"
+              style="font-size: larger"
+              >Team</a
             >
           </div>
           <div class="navbar-nav ml-auto">
-            <a
-              href="./pages/login.html"
-              class="nav-item nav-link"
-              style="font-size: x-large; font-weight: bold"
-              >Login</a
-            >
+            <a href="#" class="navbar-brand">
+              <img
+                src="/resources/svgs/circle-cropped.svg"
+                height="75"
+                class="svg"
+                alt="CROTONIA"
+              />
+            </a>
           </div>
         </div>
       </nav>
     </div>
-<!-- <div class="wrapper"> -->
+    <!-- <div class="wrapper"> -->
     <div class="container">
       <h1 id="headline">
         <span
           class="typer"
           id="main"
-          data-words=" Coming &nbsp;Soon"
+          data-words=" Equinox World &nbsp;MUN"
           data-delay="150"
           data-colors="var(--timer-headline)"
           data-loop="1"
-        ></span>
-        <span
-          class="cursor"
-          data-cursorDisplay="!"
-          style="color: var(--cursor-color)"
-          data-owner="main"
         ></span>
       </h1>
       <div id="countdown">
@@ -122,7 +129,7 @@
       </div>
     </div>
 
-    <footer id="footer" class="text-white text-center  fixed-bottom">
+    <footer id="footer" class="text-white text-center fixed-bottom">
       <!--Social buttons-->
       <div class="text-center">
         <h4>Connect with us at</h4>
@@ -130,47 +137,52 @@
           <div class="flash">
             <li class="list-inline-item">
               <a
-                href="https://www.facebook.com/crotonia"
+                href="https://twitter.com/equinoxworldmun"
+                class="sbtn btn-large mx-1"
+                title="Youtube"
+              >
+                <ion-icon name="logo-twitter" style="color: #b506d0"></ion-icon>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a
+                href="https://www.facebook.com/equinoxworldmun/"
                 class="sbtn btn-large mx-1"
                 title="Facebook"
               >
                 <ion-icon
                   name="logo-facebook"
-                  style="color: #4267b2"
+                  style="color: #044cfb"
                 ></ion-icon>
               </a>
             </li>
             <li class="list-inline-item">
               <a
-                href="https://www.instagram.com/crotonia_iiitl/"
+                href="https://www.instagram.com/equinoxworldmun/"
                 class="sbtn btn-large mx-1"
                 title="Instagram"
               >
                 <ion-icon
                   name="logo-instagram"
-                  style="color: #2867b2"
+                  style="color: #fbeb04"
                 ></ion-icon>
               </a>
             </li>
-            <!-- <li class="list-inline-item">
-            <a href="#!" class="sbtn btn-large mx-1" title="Twitter">
-             <ion-icon name="logo-medium" style="color: white"></ion-icon>
-            </a>
-          </li> -->
+
             <li class="list-inline-item">
               <a
-                href="https://www.youtube.com/c/CROTONIAIIITLucknow"
+                href="https://www.youtube.com/c/equinoxiiitlucknow"
                 class="sbtn btn-large mx-1"
                 title="Youtube"
               >
-                <ion-icon name="logo-youtube" style="color: #ff0000"></ion-icon>
+                <ion-icon name="logo-youtube" style="color: #e40404"></ion-icon>
               </a>
             </li>
           </div>
         </ul>
       </div>
     </footer>
-  <!-- </div> -->
+    <!-- </div> -->
 
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
     <script src="/resources/js/script.js"></script>
