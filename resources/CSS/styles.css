@@ -16,13 +16,19 @@
   --opwhite: rgba(255, 255, 255, 0.1);
 }
 
+/* change color of text selection */
+::selection {
+  background: #d607f65b;
+  color: var(--white);
+}
+
 .light {
   --bg: var(--gray0);
   --bg-nav: var(--black);
   --nav-text: var(--offwhite);
   --text: var(--offwhite);
   --bg-solar: var(--yellow);
-  --timer-headline: wheat;
+  --timer-headline: white;
   --cursor-color: var(--blue);
   --img-filter: invert(0);
   --texture1: #191919;
@@ -56,12 +62,6 @@ body {
   overflow-y: hidden;
 }
 
-#toggle {
-  /* transform: translate(20%, 0); */
-  margin-right: 0;
-  padding-right: 0;
-}
-
 .nav-item {
   margin-right: 2rem;
   font-size: 1.5em !important;
@@ -82,7 +82,7 @@ body {
 }
 .navigator {
   /* margin: 10px; */
-  border: 1px solid white;
+  /* border: 1px solid white; */
   margin-bottom: 7vh;
 
   /* display: flex; */
@@ -105,8 +105,8 @@ body {
 }
 .svg {
   filter: var(--img-filter);
+  animation: color-rotate 5s linear infinite;
 }
-
 body {
   padding-top: 70px;
   margin-top: 5vh;
@@ -115,17 +115,9 @@ body {
   display: flex;
   padding-top: 5vh;
   color: var(--text);
-
-  /* background: radial-gradient(var(--texture2) 15%, transparent 16%) 0 0,
-    radial-gradient(var(--texture2) 15%, transparent 16%) 8px 8px,
-    radial-gradient(var(--texture1) 15%, transparent 20%) 0 1px,
-    radial-gradient(var(--texture1) 15%, transparent 20%) 8px 9px; */
-
   background-size: 16px 16px;
-  /* transition: background 500ms ease-in-out, color 1000ms ease-in-out; */
-  background: url(/resources/images/gen-assembly-dark.jpeg) no-repeat center
-    fixed;
-  backdrop-filter: blur(5px);
+  background: url(/resources/images/rainbow.jpg) no-repeat center fixed;
+  /* backdrop-filter: blur(5px); */
   background-size: cover;
   /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; */
@@ -159,6 +151,10 @@ h4 {
 #headline {
   font-size: 80px;
   /* font-family: 'Mate SC', Arial, sans-serif; */
+  /* add glow */
+  text-shadow: 0 0 10px #b29600, 0 0 20px #b29600, 0 0 30px #b29600, 0 0 40px #b29600,
+    0 0 50px #b29600, 0 0 60px #b29600, 0 0 70px #b29600;
+    animation: color-rotate 10s linear infinite;
 }
 li {
   /* font-family: 'Mate SC', Arial, sans-serif; */
@@ -217,4 +213,3 @@ li span {
     width: max-content;
   }
 }
-

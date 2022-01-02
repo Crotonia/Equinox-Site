@@ -19,12 +19,12 @@
   --bg: var(--gray0);
   --bg-nav: var(--black);
   --nav-text: var(--offwhite);
-  --text: var(--gray6);
+  --text: var(--offwhite);
   --bg-solar: var(--yellow);
-  --timer-headline: gold;
+  --timer-headline: wheat;
   --cursor-color: var(--blue);
-  --img-fiter: invert(1);
-  --texture1: #e6e6e6;
+  --img-filter: invert(0);
+  --texture1: #191919;
   --texture2: #f5f5f5;
 }
 
@@ -40,8 +40,6 @@
   --texture1: var(--opwhite);
   --texture2: var(--black);
 }
-
-
 
 * {
   box-sizing: border-box;
@@ -61,10 +59,6 @@
   /* text-align: center; */
 }
 
-
-
-
-
 body::-webkit-scrollbar-track {
   background: black;
 }
@@ -72,8 +66,8 @@ body::-webkit-scrollbar-thumb {
   background: rgb(175, 24, 24);
 }
 .main {
-   /* background:url(/resources/images/4.png); */
-   /* background-attachment: fixed; */
+  /* background:url(/resources/images/4.png); */
+  /* background-attachment: fixed; */
   overflow-x: hidden;
 }
 .ch-grid {
@@ -300,4 +294,3 @@ footer li {
   padding: 1em;
   text-transform: uppercase;
 }
-
